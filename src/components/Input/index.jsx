@@ -9,7 +9,7 @@ function Input(props) {
   return (
     <Container> 
      <FontAwesomeIcon icon={props.icone} color={corIcones}/>
-     <InputStyle placeholder={props.mensagem}/>
+     <InputStyle placeholder={props.mensagem} {...props}/>
     </Container>
    );
 
