@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const ContainerStyle = styled.div`
+  background-color: #EEEEEE;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 `;
