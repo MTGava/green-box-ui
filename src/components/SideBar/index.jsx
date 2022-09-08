@@ -1,15 +1,16 @@
 import React from 'react';
 import { Container, SideBarStyle, MenuStyle } from './index-styles';
 
-function SideBar() {
+function SideBar(props) {
     return (
     <Container>
-        <SideBarStyle>
+        <SideBarStyle active={props.active}>
             <MenuStyle>
-                <p>Teste</p>
-                <p>Teste</p>
-                <p>Teste</p>
-                <p>Teste</p>
+                <p>Home</p>
+                <p>Ranking geral</p>
+                <p>Troca de pontos</p>
+                <p>Perfil</p>
+                <p>Logout</p>
             </MenuStyle>
         </SideBarStyle>
     </Container>

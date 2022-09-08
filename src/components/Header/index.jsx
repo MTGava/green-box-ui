@@ -7,10 +7,10 @@ import GreenBoxIcon from '../../assets/green-box.png'
 import SideBar from '../SideBar';
 
 function Header() {
-  const [active, setActive] = useState(true)
+  const [active, setActive] = useState(false)
   return (
     <>
-    {active && <SideBar />}
+    {active && <SideBar active={active} />}
     <HeaderStyle>
         <FontAwesomeIcon icon={active ? faXmark : faBars} color="#739963" fontSize={50} cursor="pointer"
         onClick={()=>{

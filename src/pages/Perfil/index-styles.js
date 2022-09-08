@@ -13,8 +13,9 @@ export const PerfilStyle = styled.div`
 
 export const RankingStyle = styled.div`
     display: flex;
+    flex-direction: column;
     padding: 1vw;
-    justify-content: center;
+    align-items: center;
     margin: 0 10px;
     background-color: white;
     width: 49vw;
