@@ -4,6 +4,7 @@ export const RankingStyle = styled.div`
   border-radius: 4px;
   display: flex;
   align-items: center;
+  justify-content: ${props => props.nome ? "" : "center" };
   background-color: ${props => props.cor || "#EEEE"};
   padding: 4px 8px;
   width: ${props => props.width || "300px"};

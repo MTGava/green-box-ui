@@ -24,7 +24,7 @@ export const RankingStyle = styled.div`
 
 export const UsuarioStyle = styled.div`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding: 2vw;
     margin: 0 10px;
     background-color: white;

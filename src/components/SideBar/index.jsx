@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, SideBarStyle, MenuStyle } from './index-styles';
 
 function SideBar(props) {
     return (
-    <Container>
+    <Container active={props.active}>
         <SideBarStyle active={props.active}>
             <MenuStyle>
-                <p>Home</p>
-                <p>Ranking geral</p>
-                <p>Troca de pontos</p>
-                <p>Perfil</p>
-                <p>Logout</p>
+                <Link to="/home" ><p>Home</p></Link>
+                <Link to="/home" ><p>Ranking geral</p></Link>
+                <Link to="/home" ><p>Troca de pontos</p></Link>
+                <Link to="/perfil" ><p>Perfil</p></Link>
+                <Link to="/" ><p>Logout</p></Link>
             </MenuStyle>
         </SideBarStyle>
     </Container>

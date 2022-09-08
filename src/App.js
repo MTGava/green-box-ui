@@ -1,11 +1,13 @@
-import Login from "./pages/Login";
-import Home from "./pages/Home";
-import Perfil from "./pages/Perfil";
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+import AllRoutes from './routes/AllRoutes.jsx';
+
+const App = () => {
   return (
-    <Perfil />
+    <BrowserRouter>
+      <AllRoutes />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -5,12 +5,13 @@ import { faBars, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Image from '../../components/Image';
 import GreenBoxIcon from '../../assets/green-box.png'
 import SideBar from '../SideBar';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [active, setActive] = useState(false)
   return (
     <>
-    {active && <SideBar active={active} />}
+    {active ? <SideBar active={true} hide={false}/> : <SideBar active={false} hide={true}/>}
     <HeaderStyle>
         <FontAwesomeIcon icon={active ? faXmark : faBars} color="#739963" fontSize={50} cursor="pointer"
         onClick={()=>{
@@ -21,7 +22,10 @@ function Header() {
         width="80px"
         height="80px"
         />
-        <FontAwesomeIcon icon={faUser} color="#739963" fontSize={50} cursor="pointer"/>
+        <Link to="/perfil">
+          <FontAwesomeIcon icon={faUser} color="#739963" fontSize={50} cursor="pointer"/>
+        </Link>
+        
     </HeaderStyle>
     </>
   )
