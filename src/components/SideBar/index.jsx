@@ -8,10 +8,10 @@ function SideBar(props) {
         <SideBarStyle active={props.active}>
             <MenuStyle>
                 <Link to="/home" ><p>Home</p></Link>
-                <Link to="/home" ><p>Ranking geral</p></Link>
+                <Link to="/ranking" ><p>Ranking geral</p></Link>
                 <Link to="/home" ><p>Troca de pontos</p></Link>
                 <Link to="/perfil" ><p>Perfil</p></Link>
-                <Link to="/" ><p>Logout</p></Link>
+                <Link to="/login" ><p>Logout</p></Link>
             </MenuStyle>
         </SideBarStyle>
     </Container>

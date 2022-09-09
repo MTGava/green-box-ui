@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ButtonStyle = styled.button`
   font-weight: 700;
-  margin: 6px 4px;
+  margin: 1rem 0;
   background-color: #739963;
   border: none;
   outline: none;
