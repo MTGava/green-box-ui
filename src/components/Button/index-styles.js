@@ -15,7 +15,7 @@ export const ButtonStyle = styled.button`
   border-radius: 4px;
   color: white;
   justify-content: center;
-  transition: all 0.2s;
+  transition: color 0.3s;
   cursor: pointer;
   :hover {background: #4D6642}
 `;

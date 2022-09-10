@@ -1,32 +1,58 @@
-import React, { useState } from 'react';
-import { HeaderStyle } from './index-styles';
+import React, { useEffect, useState } from 'react';
+import { HeaderStyle, ListStyle, ListItemStyle } from './index-styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faRightFromBracket, faUser, faXmark } from '@fortawesome/free-solid-svg-icons';
 import Image from '../../components/Image';
 import GreenBoxIcon from '../../assets/green-box.png'
 import SideBar from '../SideBar';
-import { Link } from 'react-router-dom';
+import Divisor from '../Divisor';
+import TextLink from '../TextLink';
 
 function Header() {
   const [active, setActive] = useState(false)
+  const [barWidth, setBarWidht] = useState('0px')
+
+  useEffect(() => {
+    if (active) {
+      setBarWidht("300px")
+    } else {
+      setBarWidht("0")
+    }
+  }, [active])
+
   return (
     <>
-    {active ? <SideBar active={true} hide={false}/> : <SideBar active={false} hide={true}/>}
-    <HeaderStyle>
-        <FontAwesomeIcon icon={active ? faXmark : faBars} color="#739963" fontSize={50} cursor="pointer"
-        onClick={()=>{
+      <SideBar barWidth={barWidth} active={active}/>
+      <HeaderStyle>
+        <FontAwesomeIcon icon={active ? faXmark : faBars} color="#739963" fontSize={32} cursor="pointer"
+          onClick={() => {
             setActive(!active)
-        }} style={{"z-index": "999"}}
+          }} style={{ "z-index": "5" }}
         />
-        <Image src={GreenBoxIcon} 
-        width="80px"
-        height="80px"
+        <Image src={GreenBoxIcon}
+          width="80px"
+          height="80px"
+          style={{
+            "position": "fixed",
+            "left": "50%"
+          }}
         />
-        <Link to="/perfil">
-          <FontAwesomeIcon icon={faUser} color="#739963" fontSize={50} cursor="pointer"/>
-        </Link>
-        
-    </HeaderStyle>
+        <ListStyle>
+          <ListItemStyle>
+            <TextLink>
+              <FontAwesomeIcon icon={faUser} style={{ marginRight: "4px" }} />
+              Perfil
+            </TextLink>
+          </ListItemStyle>
+          <Divisor />
+          <ListItemStyle>
+            <TextLink>
+              <FontAwesomeIcon icon={faRightFromBracket} style={{ marginRight: "4px" }} />
+              Sair
+            </TextLink>
+          </ListItemStyle>
+        </ListStyle>
+      </HeaderStyle>
     </>
   )
 }

@@ -16,4 +16,5 @@ export const ContainerShadow = styled.div`
   flex-direction: column;
   padding: 5rem;
   box-shadow: 0 0 1rem #888;
+  border-radius: 8px;
 `;

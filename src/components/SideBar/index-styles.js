@@ -1,63 +1,35 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
-  backdrop-filter: blur(10px);
-  background-color: rgba(0,0,0,0.13);
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  animation: ${props => props.active ? "fadein" : "fadeout"} 0.5s;
-  visibility: ${props => props.active ? "" : "hidden"};
-  @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeout {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-}
-
+  height: 100%;
+  width: ${props => props.barWidth};
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 0.5s;
+  box-shadow: 0 0 1.2rem #888;
 `;
 
-export const SideBarStyle = styled.div`
-    background-color: white;
-    width: 30vw;
-    height: 100vh;
-    display: flex;
-    padding: 24px;
-    width: 20vw;
-    animation: ${props => props.active ? "fadein" : "fadeout"} 0.5s;
-    visibility: ${props => props.active ? "" : "hidden"};
-  @keyframes fadein {
-  from {
-    opacity: 0;
+export const StyledLink = styled(Link)`
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #739963;
+  display: block;
+  transition: 0.5s;
+  white-space: nowrap;
+  text-transform: uppercase;
+  :hover {
+    color: #FFF;
+    background-color: #4D6642;    
   }
-  to {
-    opacity: 1;
+  &:nth-child(1) {
+    margin-top: 32px;
   }
-}
-  @keyframes fadeout {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-}
 `;
-
-
-
-export const MenuStyle = styled.div`
-    margin-top: 90px;
-    margin-left: 20px;
-    
-`

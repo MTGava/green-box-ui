@@ -5,11 +5,12 @@ export const RankingStyle = styled.div`
   display: flex;
   align-items: center;
   justify-content: ${props => props.nome ? "" : "center" };
-  background-color: ${props => props.cor || "#EEEE"};
+  background-color: #EEEE;
   padding: 4px 8px;
   width: ${props => props.width || "300px"};
   height: 30px;
   margin: 0 5px;
+  font-weight: 500;
 `;
 
 export const ContainerRanking = styled.div`
@@ -19,6 +20,15 @@ export const ContainerRanking = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    &:nth-child(2) ${RankingStyle} {
+      background-color: #ffd700;
+    }
+    &:nth-child(3) ${RankingStyle} {
+      background-color: #c0c0c0;
+    }
+    &:nth-child(4) ${RankingStyle} {
+      background-color: #cd7f32;
+    }
 `;
 
 export const Container = styled.div`
@@ -29,4 +39,3 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
 `;
-

@@ -20,6 +20,8 @@ export const RankingStyle = styled.div`
     background-color: white;
     width: 49vw;
     height: 40vh;
+    box-shadow: 0 0 1rem #888;
+    border-radius: 8px;
 `;
 
 export const UsuarioStyle = styled.div`
@@ -30,6 +32,8 @@ export const UsuarioStyle = styled.div`
     background-color: white;
     width: 48vw;
     height: 70vh;
+    box-shadow: 0 0 1rem #888;
+    border-radius: 8px;
 `;
 
 export const DadosUsuarioStyle = styled.div`

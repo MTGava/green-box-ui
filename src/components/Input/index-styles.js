@@ -7,6 +7,9 @@ export const InputStyle = styled.input`
   color: #7F7F7F;
   outline: 0;
   width: 100%;
+  ::placeholder {
+    font-weight: 700;
+  }
 `;
 
 export const Container = styled.div`
