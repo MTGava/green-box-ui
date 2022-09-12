@@ -14,7 +14,7 @@ function Login() {
       <ContainerStyle className='container'>
         <ContainerShadow>
           <Image src={GreenBoxIcon} width="220px" height="220px" style={{"margin-bottom":"5rem"}}/>
-          <Input icone={faUser} mensagem="E-mail corporativo"/>
+          <Input icone={faUser} mensagem="E-mail corporativo" type="email"/>
           <Input icone={faLock} mensagem="Senha" type="Password"/>
           <Button titulo="Entrar"/>    
           <div style={{"margin-top":"1rem"}}>
