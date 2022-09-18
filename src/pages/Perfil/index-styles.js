@@ -37,5 +37,4 @@ export const UsuarioStyle = styled.div`
 `;
 
 export const DadosUsuarioStyle = styled.div`
-
 `;

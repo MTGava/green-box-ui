@@ -4,9 +4,11 @@ import { ButtonStyle } from './index-styles'
 
 function Button(props) {
   return (
-      <ButtonStyle>
-        <Link to="/home" style={{"text-decoration" : "none", "color" : "white"}}>{props.titulo}</Link>
+    <Link to="/perfil" style={{ "text-decoration": "none", "color": "white" }}>
+      <ButtonStyle buttonWidth={props.buttonWidth}>
+        {props.children}
       </ButtonStyle>
+    </Link>
   )
 }
 

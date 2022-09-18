@@ -2,11 +2,10 @@ import styled from 'styled-components';
 
 export const ButtonStyle = styled.button`
   font-weight: 700;
-  margin: 1rem 0;
+  font-size: 20px;
   background-color: #739963;
   border: none;
   outline: none;
-  padding: 4px 8px;
   display: flex;
   align-items: center;
   text-transform: uppercase;

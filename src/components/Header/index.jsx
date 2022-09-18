@@ -27,7 +27,7 @@ function Header() {
         <FontAwesomeIcon icon={active ? faXmark : faBars} color="#739963" fontSize={32} cursor="pointer"
           onClick={() => {
             setActive(!active)
-          }} style={{ "z-index": "5" }}
+          }} style={{ "zIndex": "5" }}
         />
         <Image src={GreenBoxIcon}
           width="80px"
@@ -39,14 +39,14 @@ function Header() {
         />
         <ListStyle>
           <ListItemStyle>
-            <TextLink>
+            <TextLink to="/perfil">
               <FontAwesomeIcon icon={faUser} style={{ marginRight: "4px" }} />
               Perfil
             </TextLink>
           </ListItemStyle>
           <Divisor />
           <ListItemStyle>
-            <TextLink>
+            <TextLink to="/">
               <FontAwesomeIcon icon={faRightFromBracket} style={{ marginRight: "4px" }} />
               Sair
             </TextLink>
