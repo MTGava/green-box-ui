@@ -12,7 +12,7 @@ export const PointsStyle = styled.div`
     justify-content: center;
 `;
 
-export const UsuarioStyle = styled.div`
+export const TrocaPontosStyle = styled.div`
     display: flex;
     flex-direction: column;
     padding: 2vw;

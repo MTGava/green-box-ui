@@ -14,11 +14,11 @@ export const PerfilStyle = styled.div`
 export const RankingStyle = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 1vw;
+    padding: 2vw;
     align-items: center;
     margin: 0 10px;
     background-color: white;
-    width: 49vw;
+    width: 48vw;
     height: 40vh;
     box-shadow: 0 0 1rem #888;
     border-radius: 8px;
@@ -31,7 +31,7 @@ export const UsuarioStyle = styled.div`
     margin: 0 10px;
     background-color: white;
     width: 48vw;
-    height: 70vh;
+    height: 40vh;
     box-shadow: 0 0 1rem #888;
     border-radius: 8px;
 `;

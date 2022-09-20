@@ -1,26 +1,21 @@
 import React from 'react';
-import { Container, ContainerRanking, RankingStyle } from './index-styles';
+import { Container, ContainerRanking, RankingStyle, Title } from './index-styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRankingStar } from '@fortawesome/free-solid-svg-icons';
 
-function Ranking() {  
+
+function Ranking(props) {  
     return (
-        <>
-            <ContainerRanking>
-                <RankingStyle nome="true">Marcos Rossetto</RankingStyle>
-                <RankingStyle width="100px">1242423300</RankingStyle>
+        <Container>
+            <Title>
+                <FontAwesomeIcon icon={faRankingStar} color="#739963" fontSize={60} />
+            </Title>
+            {props.ranking.map((i, index) => <ContainerRanking key={index}>
+                <RankingStyle nome="true">{i.name}</RankingStyle>
+                <RankingStyle width="100px">{i.points}</RankingStyle>
             </ContainerRanking>
-            <ContainerRanking>
-                <RankingStyle nome="true">Matheus Gava Silva</RankingStyle>
-                <RankingStyle width="100px">1242423299</RankingStyle>
-            </ContainerRanking>
-            <ContainerRanking>
-                <RankingStyle nome="true">Guilherme Moreira</RankingStyle>
-                <RankingStyle width="100px">900</RankingStyle>
-            </ContainerRanking>
-            <ContainerRanking>
-                <RankingStyle nome="true">Gabriel Aguiar</RankingStyle>
-                <RankingStyle width="100px">5</RankingStyle> 
-            </ContainerRanking>
-        </>
+            )}
+        </Container>
     ) 
 };
 

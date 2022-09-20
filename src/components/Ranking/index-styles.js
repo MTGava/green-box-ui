@@ -33,9 +33,15 @@ export const ContainerRanking = styled.div`
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px; 
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    text-align: center;
+`;
+
+export const Title = styled.h1`
+    color: #739963;
+    font-weight: 400;
+    font-size: 48;
+    text-transform: uppercase;
 `;

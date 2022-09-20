@@ -7,13 +7,33 @@ import Ranking from '../../components/Ranking';
 import User from '../../components/User';
 
 function Perfil() {
+  const ranking = [{
+    name: 'Marcos V',
+    points: '12000',
+	  place: '1'
+   
+},{
+    name: 'Marcos V',
+    points: '11000',
+	  place: '2'
+   
+},{
+    name: 'Marcos V',
+    points: '10000',
+  	place: '3'
+   
+},{
+    name: 'Marcos V',
+    points: '9000',
+  	place: '4'
+   
+}];
   return (
     <ContainerStyle>
         <Header />
         <PerfilStyle>
             <RankingStyle>
-                <FontAwesomeIcon icon={faRankingStar} color="#739963" fontSize={50} />
-                <Ranking />
+                <Ranking ranking={ranking} />
             </RankingStyle>
             <UsuarioStyle>
                 <FontAwesomeIcon icon={faUserCircle} color="#739963" fontSize={80} />

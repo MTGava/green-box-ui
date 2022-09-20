@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerStyle, PointsStyle, UsuarioStyle, HeaderPoints, Points, Title, ContainerCard } from './index-styles';
+import { ContainerStyle, PointsStyle, TrocaPontosStyle, HeaderPoints, Points, Title, ContainerCard } from './index-styles';
 import Header from '../../components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoins } from '@fortawesome/free-solid-svg-icons';
@@ -19,12 +19,6 @@ function TrocaPontos() {
     points: '3780'
    
 }, {
-    name: 'LOL',
-    value: '88,90',
-    image: 'https://www.leagueoflegends.com/static/open-graph-2e582ae9fae8b0b396ca46ff21fd47a8.jpg',
-    points: '17780'
-    
-}, {
   name: 'Spotify',
   value: '45,90',
   image: 'https://www.scdn.co/i/_global/open-graph-default.png',
@@ -38,16 +32,18 @@ function TrocaPontos() {
   
 }]
 
+let pontuacao = 6000;
+
   return (
     <ContainerStyle>
       <Header />
       <PointsStyle>
-        <UsuarioStyle>
+        <TrocaPontosStyle>
           <HeaderPoints>
             <Title>Troca de Pontos</Title>
             <Points>
               <FontAwesomeIcon icon={faCoins} color="#739963" fontSize={24} style={{ "marginRight": "10px" }} />
-              1600 
+              {pontuacao}
             </Points>
           </HeaderPoints>
           <ContainerCard>
@@ -56,9 +52,10 @@ function TrocaPontos() {
             value={i.value}
             image={i.image}
             points={i.points}
+            pontuacao={pontuacao}
             />)}
           </ContainerCard>
-        </UsuarioStyle>
+        </TrocaPontosStyle>
       </PointsStyle>
     </ContainerStyle>
   );

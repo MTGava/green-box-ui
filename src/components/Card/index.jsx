@@ -41,7 +41,14 @@ function Card(props) {
             totalValue={totalValue}/>
         </QuantityContainer>
         <RewardContainer>
-          <ButtonQuantity buttonWidth="60px">
+          <ButtonQuantity buttonWidth="60px" onClick={() => {
+            if(props.pontuacao < totalValue) {
+              alert("Você não possui créditos o suficiente para resgatar este item!")
+            } else {
+              alert("Recompensa reivindicada com sucesso!")
+            }
+            
+          }}>
             <FontAwesomeIcon icon={faSackDollar} />
           </ButtonQuantity>
           <TotalPoints>

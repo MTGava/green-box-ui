@@ -1,15 +1,113 @@
 import React from 'react';
-import { Container, ContainerStyle } from './index-styles';
+import { ContainerStyle, RankingStyle, TesteStyle } from './index-styles';
 import DataTable from './Table'
+import Ranking from '../../components/Ranking';
 import Header from '../../components/Header';
 
-function Ranking() {
+function RankingTotal() {
+
+  const ranking = [{
+    name: 'Marcos V',
+    points: '12000',
+	  place: '1'
+   
+},{
+    name: 'Marcos V',
+    points: '11000',
+	  place: '2'
+   
+},{
+    name: 'Marcos V',
+    points: '10000',
+  	place: '3'
+   
+},{
+    name: 'Marcos V',
+    points: '9000',
+  	place: '4'
+   
+},{
+    name: 'Marcos V',
+    points: '8000',
+	  place: '5'
+   
+},{
+    name: 'Marcos V',
+    points: '7000',
+  	place: '6'
+   
+},{
+  name: 'Marcos V',
+  points: '6000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '5000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '4000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+},{
+  name: 'Marcos V',
+  points: '3000',
+  place: '6'
+ 
+}]
+
   return (
     <ContainerStyle>
         <Header />
-    <DataTable />
+        <TesteStyle>
+          <RankingStyle>
+            <Ranking ranking={ranking} />
+          </RankingStyle>
+        </TesteStyle>
   </ContainerStyle>
   )
 }
 
-export default Ranking;
+export default RankingTotal;

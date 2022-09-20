@@ -32,10 +32,6 @@ function Header() {
         <Image src={GreenBoxIcon}
           width="80px"
           height="80px"
-          style={{
-            "position": "fixed",
-            "left": "50%"
-          }}
         />
         <ListStyle>
           <ListItemStyle>
