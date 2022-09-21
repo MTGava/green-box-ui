@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerStyle, PerfilStyle, RankingStyle, UsuarioStyle } from './index-styles';
+import { ContainerStyle, PerfilStyle, RankingStyle, Relatorio, UsuarioStyle } from './index-styles';
 import Header from '../../components/Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRankingStar, faRecycle, faStar, faUserCircle, faArrowUpShortWide } from '@fortawesome/free-solid-svg-icons';
@@ -8,23 +8,23 @@ import User from '../../components/User';
 
 function Perfil() {
   const ranking = [{
-    name: 'Marcos V',
+    name: 'Gabriel A',
     points: '12000',
 	  place: '1'
    
 },{
-    name: 'Marcos V',
+    name: 'Anderson P',
     points: '11000',
 	  place: '2'
    
 },{
-    name: 'Marcos V',
+    name: 'Heitor K',
     points: '10000',
   	place: '3'
    
 },{
-    name: 'Marcos V',
-    points: '9000',
+    name: 'Matheus G',
+    points: '6000',
   	place: '4'
    
 }];
@@ -37,21 +37,23 @@ function Perfil() {
             </RankingStyle>
             <UsuarioStyle>
                 <FontAwesomeIcon icon={faUserCircle} color="#739963" fontSize={80} />
+                <Relatorio>
                 <User top="20px" main="center">Olá, Matheus!</User>
                 <User top="20px">Relatório do seu GreenBox:</User>
                 <User top="20px">
-                  <FontAwesomeIcon icon={faRecycle} color="#739963" fontSize={30} style={{"margin-right" : "10px"}}/>
-                  3
+                  <FontAwesomeIcon icon={faRecycle} fontSize="32"/>
+                  <span style={{"margin-left":"10px"}}>Itens reciclados: 120</span>
+                  
                 </User>
                 <User top="40px">
-                  <FontAwesomeIcon icon={faStar} color="#739963" fontSize={30} style={{"margin-right" : "10px"}}/>
-                  1300
+                  <FontAwesomeIcon icon={faStar} fontSize="32"/>
+                  <span style={{"margin-left":"10px"}}>Pontos: 6000</span>
                 </User>
                 <User top="40px">
-                  <FontAwesomeIcon icon={faArrowUpShortWide} color="#739963" fontSize={30} style={{"margin-right" : "10px"}}/>
-                  {Math.round(30 / 5)}
+                  <FontAwesomeIcon icon={faArrowUpShortWide} fontSize="32"/>
+                  <span style={{"margin-left":"10px"}}>Nível: {Math.round(120 / 5)}</span>
                 </User>
-                
+                </Relatorio>
             </UsuarioStyle>
         </PerfilStyle>
     </ContainerStyle>

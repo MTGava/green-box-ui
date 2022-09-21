@@ -1,6 +1,5 @@
 import React from 'react';
-import { ContainerStyle, RankingStyle, TesteStyle } from './index-styles';
-import DataTable from './Table'
+import { ContainerStyle, RankingStyle, PositionsStyle } from './index-styles';
 import Ranking from '../../components/Ranking';
 import Header from '../../components/Header';
 
@@ -101,11 +100,11 @@ function RankingTotal() {
   return (
     <ContainerStyle>
         <Header />
-        <TesteStyle>
+        <PositionsStyle>
           <RankingStyle>
             <Ranking ranking={ranking} />
           </RankingStyle>
-        </TesteStyle>
+        </PositionsStyle>
   </ContainerStyle>
   )
 }

@@ -1,11 +1,17 @@
 import styled from 'styled-components';
 
-export const ContainerStyle = styled.div`
+export const ContainerRoot = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  overflow: hidden;
+`;
+
+export const ContainerStyle = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100vh;
 `;
 
 export const ContainerShadow = styled.div`

@@ -4,14 +4,15 @@ import Button from '../../components/Button';
 import Image from '../../components/Image';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 import GreenBoxIcon from '../../assets/green-box.png'
-import { ContainerShadow, ContainerStyle } from './index-styles'
+import { ContainerShadow, ContainerStyle, ContainerRoot } from './index-styles'
 import Divisor from '../../components/Divisor'
 import TextLink from '../../components/TextLink';
 
 
 function Login() {
   return (
-      <ContainerStyle className='container'>
+    <ContainerRoot>
+      <ContainerStyle>
         <ContainerShadow>
           <Image src={GreenBoxIcon} width="220px" height="220px" style={{"margin-bottom":"5rem"}}/>
           <Input icone={faUser} mensagem="E-mail corporativo" type="email"/>
@@ -24,6 +25,7 @@ function Login() {
           </div>      
         </ContainerShadow>
       </ContainerStyle>
+      </ContainerRoot>
   );
 }
 

@@ -19,7 +19,7 @@ export const TrocaPontosStyle = styled.div`
     margin: 0 10px;
     background-color: white;
     width: 80vw;
-    height: 70vh;
+    height: 74vh;
     box-shadow: 0 0 1rem #888;
     border-radius: 8px;
 `;

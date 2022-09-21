@@ -30,8 +30,8 @@ function Header() {
           }} style={{ "zIndex": "5" }}
         />
         <Image src={GreenBoxIcon}
-          width="80px"
-          height="80px"
+          width="60px"
+          height="60px"
         />
         <ListStyle>
           <ListItemStyle>

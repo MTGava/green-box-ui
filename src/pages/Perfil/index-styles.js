@@ -19,7 +19,7 @@ export const RankingStyle = styled.div`
     margin: 0 10px;
     background-color: white;
     width: 48vw;
-    height: 40vh;
+    height: 52vh;
     box-shadow: 0 0 1rem #888;
     border-radius: 8px;
 `;
@@ -31,9 +31,15 @@ export const UsuarioStyle = styled.div`
     margin: 0 10px;
     background-color: white;
     width: 48vw;
-    height: 40vh;
     box-shadow: 0 0 1rem #888;
     border-radius: 8px;
+`;
+
+export const Relatorio = styled.p`
+    color: #739963;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right : 10px
 `;
 
 export const DadosUsuarioStyle = styled.div`
