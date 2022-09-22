@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { ContainerStyle, Container, Title, QuantityContainer, RewardContainer, TotalPoints } from './index-styles';
-import Image from '../Image'
-import Quantity from '../Quantity'
+import Image from '../Image';
+import GreenBoxIcon from '../../assets/green-box.png';
+import Quantity from '../Quantity';
 import { faSackDollar, faCoins } from '@fortawesome/free-solid-svg-icons';
 import ButtonQuantity from '../ButtonQuantity';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -30,16 +31,9 @@ function Card(props) {
 
   return (
     <ContainerStyle>
-      <Image src={props.image} width="100%" height="60%" style={{"borderRadius": "8px 8px 0 0" }} />
+      <Image src={GreenBoxIcon} width="100%" style={{"borderRadius": "8px 8px 0 0" }} />
       <Container>
-        <Title>{props.title} R$ {props.value}</Title>
-        <QuantityContainer>
-         <Quantity          
-            incrementFunction={incrementValue} 
-            decrementFunction={decrementValue} 
-            quantityValue={quantityValue} 
-            totalValue={totalValue}/>
-        </QuantityContainer>
+        <Title>{props.title}</Title>
         <RewardContainer>
           <ButtonQuantity buttonWidth="60px" onClick={() => {
             if(props.pontuacao < totalValue) {

@@ -6,93 +6,93 @@ import Header from '../../components/Header';
 function RankingTotal() {
 
   const ranking = [{
-    name: 'Marcos V',
+    name: 'Gabriel Antonio',
     points: '12000',
 	  place: '1'
    
 },{
-    name: 'Marcos V',
+    name: 'Anderson Pereira',
     points: '11000',
 	  place: '2'
    
 },{
-    name: 'Marcos V',
+    name: 'Heitor Kalvon',
     points: '10000',
   	place: '3'
    
 },{
-    name: 'Marcos V',
+    name: 'Maria Bessa',
     points: '9000',
   	place: '4'
    
 },{
-    name: 'Marcos V',
+    name: 'Emilia Arruda',
     points: '8000',
 	  place: '5'
    
 },{
-    name: 'Marcos V',
+    name: 'Kenny Varão',
     points: '7000',
   	place: '6'
    
 },{
-  name: 'Marcos V',
+  name: 'Matheus Gava',
   points: '6000',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '5000',
+  name: 'Anthony Lustosa',
+  points: '6000',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '4000',
+  name: 'Serena Camarinho',
+  points: '4500',
   place: '6'
  
 },{
-  name: 'Marcos V',
+  name: 'Hadassa Marreiro',
   points: '3000',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Inácio Caires',
+  points: '2500',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Aryan Valente',
+  points: '2000',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Nicole Ferreira',
+  points: '1500',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Rita Maior',
+  points: '1000',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Camilo Gorjão',
+  points: '500',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Denzel Salomão',
+  points: '0',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Vitória Cachão',
+  points: '0',
   place: '6'
  
 },{
-  name: 'Marcos V',
-  points: '3000',
+  name: 'Thiago Andrade',
+  points: '0',
   place: '6'
  
 }]
